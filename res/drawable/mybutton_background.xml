@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- In order to give the user an easy indicator that their action has done something 
+in the program having the button change based on actions does this very efficiently.
+The selector bellow has 4 items that change the picture based on the users current action -->
+<selector
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!-- If the user is highlighting the button but has not pressed it  a focus image is displayed. 
+as you can see bellow the android state_pressed is not true but the focus is.   -->
+<item
+ android:state_focused="true"
+ android:state_pressed="false"
+ android:drawable="@drawable/focus" />
+
+<!-- While the user is clicking the button including holding it in 
+the color is changed to a solid green -->
+<item
+ android:state_focused="true"
+ android:state_pressed="true"
+ android:drawable="@drawable/green" />
+
+<!-- This ensures that if a user is pressing more then one button they will still light up
+green even without focus -->
+<item
+ android:state_focused="false"
+ android:state_pressed="true"
+ android:drawable="@drawable/green" />
+
+<!-- If an item is not being clicked or focused then it is red -->
+<item  
+ android:drawable="@drawable/red" />
+
+
+
+
+</selector>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:background="#3b3b3b" >
+
+		<FrameLayout
+		    android:id="@+id/preview"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1" >
+		</FrameLayout>
+	
+		<Button
+		    android:id="@+id/btn_capture"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:text="Capture Image"
+		    android:visibility="gone" >
+		</Button>
+		<Button
+		    android:id="@+id/btn_s"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_gravity="center"
+		    android:text="Start Camera" >
+		</Button>
+		<Button
+		    android:id="@+id/btn_cam_release"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_gravity="center"
+		    android:text="Finish"
+		    android:visibility="gone" >
+		</Button>
+		<Button
+		    android:id="@+id/btn_refresh"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_gravity="center"
+		    android:text="Start Over"
+		    android:visibility="gone" >
+		</Button>
+</LinearLayout>

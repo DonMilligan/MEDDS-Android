@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, DshboardActivity!</string>
+    <string name="start_speaking">Press button to start speaking</string>
+    <string name="start_translation">Press button to start translation</string>
+    <string name="switch_cam">Switching camera</string>
+	<string name="app_name">MEDDS</string>
+	<string name="language_prompt">Choose a language</string>
+    <string-array name="language_array">
+        <item>UK</item>
+        <item>US</item>
+        <item>ENG</item>
+        
+    </string-array>
+</resources>

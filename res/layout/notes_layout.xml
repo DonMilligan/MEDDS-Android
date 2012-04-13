@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#3b3b3b" >
+
+        <TextView
+            android:id="@+id/directions"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="Record Notes Here:"
+            android:textSize="25dip"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_speak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Recording" />
+        <Button
+            android:id="@+id/btn_new_notes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Start Over" 
+            android:visibility="gone"/>
+		
+		<ListView 
+		    android:id="@+id/list" 
+        	android:layout_width="fill_parent" 
+       	 	android:layout_height="0dip" 
+        	android:layout_weight="1" />
+
+    </TableLayout> 
